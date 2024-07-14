@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QurbanBersama.id</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- data-aos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <style>
+         .navbar {
+          background-color: #1C402E !important;
+          border-bottom: 1px solid white;
+         }
+         .navbar-brand {
+           color: #E8C26F !important;
+         }
+         .nav-link {
+           color: white!important;
+         }
+         .activee {
+           background-color: #506440;
+           width: 140px;
+           text-align: center;
+         }
+         .navbar-toggler {
+           background-color: #E8C26F!important;
+         }
+        .text-success {
+          color: #1C402E !important;
+        }
+        .jumbotron {
+            background: url('./image/Bg.png') center center;
+            height: 500px;
+            background-size: cover;
+            color: #E8C26F !important;
+        }
+
+        .jumbotron h1 {
+            font-family: 'Great Vibes', cursive; /* Menggunakan font bertema Lebaran Haji */
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+        .jumbotron .btn-light {
+            background-color: #ffffff;
+            border: none;
+            color: #000000;
+        }
+        .btn {
+          background-color: #506440 !important;
+          color: white !important;
+        }
+        .btn:hover {
+          background-color: #506440 !important;
+          color: white !important;
+        }
+        .btn-ku {
+           background-color: #E8C26F !important
+         }
+         .btn-ku:hover {
+           background-color: #E8C26F !important
+         }
+        .judulfoot {
+          color: #E8C26F !important;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        #back-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            display: none;
+            z-index: 99;
+        }
+        .produk-img {
+            overflow: hidden;
+        }
+        .produk-img img {
+            transition: transform 0.5s ease;
+        }
+        .produk-img:hover img {
+            transform: scale(1.1);
+        }
+        .produk-card {
+            overflow: hidden;
+        }
+        .produk-card .card {
+            transition: transform 0.5s ease;
+        }
+        .produk-card:hover .card {
+            transform: scale(1.1);
+        }
+        @media(max-width: 600px){
+          .jumbotron h1 {
+            font-size: 2.5rem;
+          }
+        }
+        .footer {
+           background-color: #1C402E !important;
+           color: white !important;
+         }
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+    </style>
+</head>
+<body>
+   
+   
+   <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">QurbanBersama.id</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tentang.html">Tentang Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link activee" href="hewanqurban.html">Hewan Kurban</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pemesanan.html">Cara Pesan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontak.html">Kontak</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-ku ml-2">Login</button>
+                    <button class="btn ml-2">Daftar</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner Utama -->
+    <section class="jumbotron text-center text-white d-flex justify-content-center align-items-center mt-5 py-5">
+        <div class="container">
+            <h1 class="jumbotron-heading" style="letter-spacing: 1.2px" data-aos="fade-up">Menyediakan Hewan Kurban Berkualitas untuk Ibadah Anda</h1>
+            <p class="lead text-white" data-aos="fade-up">QurbanBersama.id</p>
+        </div>
+    </section>
+    
+    
+     <!-- Semua Produk -->
+
+    <div class="container-fluid my-5">
+
+    <div class="container mt-5">
+  <h3 class="display-4 text-success text-center mb-5" data-aos="fade-up">Semua Hewan</h3>
+  <ul class="nav nav-pills justify-content-center mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item btn" data-aos="fade-up">
+      <a class="nav-link" id="pills-mens-tab" data-toggle="pill" href="#pills-mens" role="tab" aria-controls="pills-mens" aria-selected="true">Sapi</a>
+    </li>
+    <li class="nav-item btn mx-2" data-aos="fade-up">
+      <a class="nav-link" id="pills-womens-tab" data-toggle="pill" href="#pills-womens" role="tab" aria-controls="pills-womens" aria-selected="false">Kambing</a>
+    </li>
+    <li class="nav-item btn " data-aos="fade-up">
+      <a class="nav-link" id="pills-kids-tab" data-toggle="pill" href="#pills-kids" role="tab" aria-controls="pills-kids" aria-selected="false">Domba</a>
+    </li>
+  </ul>
+  <hr>
+  <div class="tab-content mt-4" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-mens" role="tabpanel" aria-labelledby="pills-mens-tab">
+       <div class="row mt-3">
+                <div class="col-md-4 mb-3" data-aos="fade-up">
+                    <div class="card produk-img">
+                        <img src="./image/s1.jpeg" class="card-img-top" alt="Buku Terbaru 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Barokah</h5>
+                            <p class="card-text">Sapi betina berbulu coklat muda, sangat produktif dan sehat. Berat badannya sekitar 450 kg, cocok untuk qurban karena kualitas dagingnya.</p>
+                            <a href="#" class="btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3" data-aos="fade-up">
+                    <div class="card produk-img">
+                        <img src="./image/s2.jpeg" class="card-img-top" alt="Buku Terbaru 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Qurban</h5>
+                            <p class="card-text">Sapi jantan besar dengan bulu coklat kemerahan, terkenal sehat dan kuat. Cocok untuk qurban karena tubuhnya yang padat dan berotot.</p>
+                            <a href="#" class="btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3" data-aos="fade-up">
+                    <div class="card produk-img">
+                        <img src="./image/s3.jpeg" class="card-img-top" alt="Buku Terbaru 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Ridho</h5>
+                            <p class="card-text">Sapi jantan dengan bulu putih bersih, dikenal sangat sehat dan berotot. Beratnya sekitar 500 kg, cocok untuk qurban.</p>
+                            <a href="#" class="btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3" data-aos="fade-up">
+                    <div class="card produk-img">
+                        <img src="./image/s4.jpeg" class="card-img-top" alt="Buku Terbaru 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Rahmat</h5>
+                            <p class="card-text">Sapi jantan dengan bulu hitam legam dan tubuh kekar. Dikenal karena dagingnya yang berkualitas tinggi dan sehat.</p>
+                            <a href="#" class="btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3" data-aos="fade-up">
+                    <div class="card produk-img">
+                        <img src="./image/s5.jpeg" class="card-img-top" alt="Buku Terbaru 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Asep</h5>
+                            <p class="card-text">Sapi jantan berbulu coklat muda dengan postur tubuh yang sehat dan berotot. Berat badannya mencapai 490 kg, ideal untuk qurban karena kualitas dagingnya yang baik.</p>
+                            <a href="#" class="btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3" data-aos="fade-up">
+                    <div class="card produk-img">
+                        <img src="./image/s6.jpeg" class="card-img-top" alt="Buku Terbaru 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Anugrah</h5>
+                            <p class="card-text">Sapi jantan berbulu coklat gelap, tubuhnya besar dan kekar. Sifatnya tenang dan jinak, dengan berat sekitar 530 kg, membuatnya sangat cocok untuk qurban.</p>
+                            <a href="#" class="btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3" data-aos="fade-up">
+                    <div class="card produk-img">
+                        <img src="./image/s7.jpeg" class="card-img-top" alt="Buku Terbaru 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Ihsan</h5>
+                            <p class="card-text">Sapi jantan berbulu coklat keemasan, sangat sehat dan aktif. Berat badannya sekitar 510 kg, ideal untuk qurban.</p>
+                            <a href="#" class="btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3" data-aos="fade-up">
+                    <div class="card produk-img">
+                        <img src="./image/s8.jpeg" class="card-img-top" alt="Buku Terbaru 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Aanto</h5>
+                            <p class="card-text">Sapi putih dengan bercak hitam, memiliki sifat tenang dan jinak. Berat badannya ideal untuk qurban, sekitar 500 kg.</p>
+                            <a href="#" class="btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3" data-aos="fade-up">
+                    <div class="card produk-img">
+                        <img src="./image/s9.jpeg" class="card-img-top" alt="Buku Terbaru 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Amanah</h5>
+                            <p class="card-text">Sapi betina dengan bulu coklat tua, sifatnya jinak dan mudah diatur. Bobotnya sekitar 460 kg, ideal untuk qurban keluarga.</p>
+                            <a href="#" class="btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="tab-pane fade" id="pills-womens" role="tabpanel" aria-labelledby="pills-womens-tab">
+      <!-- Women's shoes carousel can be added similarly -->
+       <div class="row mt-3">
+                <div class="col-md-4 mb-3" data-aos="fade-up">
+                    <div class="card produk-img">
+                        <img src="./image/k1.jpg" class="card-img-top" alt="Buku Terbaru 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Cahaya</h5>
+                            <p class="card-text">Kambing jantan dengan bulu campuran putih dan coklat. Tubuhnya besar dan sehat, dengan berat sekitar 60 kg. Sifatnya jinak dan mudah diatur.</p>
+                            <a href="#" class="btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3" data-aos="fade-up">
+                    <div class="card produk-img">
+                        <img src="./image/k2.jpg" class="card-img-top" alt="Buku Terbaru 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Putih</h5>
+                            <p class="card-text">Kambing betina berbulu putih bersih, sangat lincah dan aktif. Berat badannya sekitar 55 kg, dengan daging yang lembut dan berkualitas.
+                            </p>
+                            <a href="#" class="btn">Lihat Detail</a>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3" data-aos="fade-up">
+                    <div class="card produk-img">
+                        <img src="./image/k3.jfif" class="card-img-top" alt="Buku Terbaru 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Coklat</h5>
+                            <p class="card-text">Kambing jantan berbulu coklat muda, tubuhnya padat dan berotot. Beratnya mencapai 58 kg, sangat cocok untuk qurban karena kesehatannya yang prima.</p>
+                            <a href="#" class="btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3" data-aos="fade-up">
+                    <div class="card produk-img">
+                        <img src="./image/k4.jfif" class="card-img-top" alt="Buku Terbaru 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Bersih</h5>
+                            <p class="card-text">Kambing betina dengan bulu putih bersih tanpa noda, sangat sehat dan berenergi. Berat badannya sekitar 54 kg, ideal untuk qurban.</p>
+                            <a href="#" class="btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3" data-aos="fade-up">
+                    <div class="card produk-img">
+                        <img src="./image/k5.jfif" class="card-img-top" alt="Buku Terbaru 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Belang</h5>
+                            <p class="card-text">Kambing jantan berbulu putih dengan bercak hitam, tubuhnya besar dan kuat. Beratnya mencapai 60 kg, dengan sifat yang tenang dan jinak.</p>
+                            <a href="#" class="btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3" data-aos="fade-up">
+                    <div class="card produk-img">
+                        <img src="./image/k6.jfif" class="card-img-top" alt="Buku Terbaru 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Arjuna</h5>
+                            <p class="card-text">Kambing jantan berbulu campuran coklat dan hitam, tubuhnya berotot dan sehat. Berat badannya sekitar 57 kg, sangat cocok untuk qurban.</p>
+                            <a href="#" class="btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3" data-aos="fade-up">
+                    <div class="card produk-img">
+                        <img src="./image/k7.jfif" class="card-img-top" alt="Buku Terbaru 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Hitam</h5>
+                            <p class="card-text">Kambing betina dengan bulu hitam legam, sangat aktif dan lincah. Beratnya mencapai 53 kg, dengan daging yang berkualitas baik.</p>
+                            <a href="#" class="btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3" data-aos="fade-up">
+                    <div class="card produk-img">
+                        <img src="./image/k8.jfif" class="card-img-top" alt="Buku Terbaru 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Abu</h5>
+                            <p class="card-text">Kambing jantan berbulu abu-abu, tubuhnya besar dan kuat. Beratnya mencapai 58 kg, ideal untuk qurban karena kesehatannya yang baik..</p>
+                            <a href="#" class="btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3" data-aos="fade-up">
+                    <div class="card produk-img">
+                        <img src="./image/k9.jfif" class="card-img-top" alt="Buku Terbaru 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Totol</h5>
+                            <p class="card-text">Kambing betina dengan bulu putih bertotol hitam, sangat aktif dan sehat. Beratnya mencapai 55 kg, dengan daging yang lembut dan berkualitas.</p>
+                            <a href="#" class="btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="tab-pane fade" id="pills-kids" role="tabpanel" aria-labelledby="pills-kids-tab">
+      <!-- Kids' shoes carousel can be added similarly -->
+       <div class="row mt-3">
+                <div class="col-md-4 mb-3" data-aos="fade-up">
+                    <div class="card produk-img">
+                        <img src="./image/d1.jfif" class="card-img-top" alt="Buku Terbaru 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Salim</h5>
+                            <p class="card-text">Domba jantan berbulu putih dengan tanduk yang melengkung indah. Tubuhnya besar dan kuat, dengan berat sekitar 65 kg. Sifatnya tenang dan mudah diatur.</p>
+                            <a href="#" class="btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3" data-aos="fade-up">
+                    <div class="card produk-img">
+                        <img src="./image/d2.jfif" class="card-img-top" alt="Buku Terbaru 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Embul</h5>
+                            <p class="card-text">Domba betina berbulu putih yang sangat tebal dan lebat. Berat badannya sekitar 60 kg, dengan daging yang lembut dan berkualitas tinggi.</p>
+                            <a href="#" class="btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3" data-aos="fade-up">
+                    <div class="card produk-img">
+                        <img src="./image/d3.jfif" class="card-img-top" alt="Buku Terbaru 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Cantik</h5>
+                            <p class="card-text">Domba betina dengan bulu campuran putih dan coklat. Tubuhnya kekar dan sehat, dengan berat mencapai 62 kg. Sifatnya jinak dan bersahabat.
+                            </p>
+                            <a href="#" class="btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3" data-aos="fade-up">
+                    <div class="card produk-img">
+                        <img src="./image/d4.jfif" class="card-img-top" alt="Buku Terbaru 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Kasep</h5>
+                            <p class="card-text">Domba betina berbulu krem, sangat lincah dan aktif. Berat badannya sekitar 58 kg, dengan daging yang lezat dan berkualitas.</p>
+                            <a href="#" class="btn">Lihat Detail</a>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3" data-aos="fade-up">
+                    <div class="card produk-img">
+                        <img src="./image/d5.jfif" class="card-img-top" alt="Buku Terbaru 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Oraki</h5>
+                            <p class="card-text">Domba jantan berbulu putih dengan corak hitam yang unik. Tubuhnya besar dan berotot, dengan berat mencapai 64 kg. Sifatnya tenang dan jinak.
+                            </p>
+                            <a href="#" class="btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3" data-aos="fade-up">
+                    <div class="card produk-img">
+                        <img src="./image/d6.jfif" class="card-img-top" alt="Buku Terbaru 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Hideng</h5>
+                            <p class="card-text">Domba jantan dengan bulu hitam legam, sangat sehat dan berenergi. Beratnya sekitar 57 kg, dengan daging yang berkualitas baik.</p>
+                            <a href="#" class="btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3" data-aos="fade-up">
+                    <div class="card produk-img">
+                        <img src="./image/d7.jfif" class="card-img-top" alt="Buku Terbaru 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Aniso</h5>
+                            <p class="card-text">Domba jantan berbulu campuran putih dan coklat, tubuhnya kekar dan kuat. Berat badannya sekitar 63 kg, cocok untuk qurban karena kesehatannya yang prima.</p>
+                            <a href="#" class="btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3" data-aos="fade-up">
+                    <div class="card produk-img">
+                        <img src="./image/d8.jfif" class="card-img-top" alt="Buku Terbaru 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Antan</h5>
+                            <p class="card-text">Domba jantan berbulu putih dengan bercak hitam, sangat aktif dan lincah. Beratnya mencapai 59 kg, dengan daging yang berkualitas.</p>
+                            <a href="#" class="btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3" data-aos="fade-up">
+                    <div class="card produk-img">
+                        <img src="./image/d9.jfif" class="card-img-top" alt="Buku Terbaru 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Ogus</h5>
+                            <p class="card-text">Domba jantan berbulu coklat dan putih, tubuhnya besar dan berotot. Beratnya sekitar 61 kg, ideal untuk qurban karena kualitas dagingnya yang baik.</p>
+                            <a href="#" class="btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+   
+  </div>
+</div>
+    </div>
+    </div>
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- Footer -->
+    <footer class="footer text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 pt-3">
+                    <h5 class="judulfoot">Link Cepat</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Tentang Kami</a></li>
+                        <li><a href="#" class="text-white">Kontak</a></li>
+                        <li><a href="#" class="text-white">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-left pt-3">
+                    <h5 class="judulfoot">Ikuti Kami</h5>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="col-md-4 text-left pt-3">
+                    <h5 class="judulfoot">Informasi Kontak</h5>
+                    <p>Email: info@qurbanbersama.id</p>
+                    <p>Tel: +62 123 4567</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+<button id="back-to-top" class="btn btn-ku" title="Go to top" data-aos="fade-left"><i class="fas fa-arrow-up"></i></button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script>
+    AOS.init();
+
+    // Show or hide the button
+    window.onscroll = function() {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        var backToTopButton = document.getElementById("back-to-top");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    document.getElementById('back-to-top').addEventListener('click', function() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    });
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

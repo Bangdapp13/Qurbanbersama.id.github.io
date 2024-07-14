@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QurbanBersama.id</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- data-aos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <style>
+         .navbar {
+          background-color: #1C402E !important;
+          border-bottom: 1px solid white;
+         }
+         .footer {
+           background-color: #1C402E !important;
+           color: white !important;
+         }
+         .navbar-brand {
+           color: #E8C26F !important;
+         }
+         .nav-link {
+           color: white!important;
+         }
+         .active {
+           background-color: #506440;
+           width: 90px;
+           text-align: center;
+         }
+         .navbar-toggler {
+           background-color: #E8C26F!important;
+         }
+        .jumbotron {
+            background: url('./image/Bg.png') center center;
+            height: 500px;
+            background-size: cover;
+            color: #E8C26F !important;
+        }
+
+        .jumbotron h1 {
+            font-family: 'Great Vibes', cursive; /* Menggunakan font bertema Lebaran Haji */
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+        .jumbotron .btn-light {
+            background-color: #ffffff;
+            border: none;
+            color: #000000;
+        }
+        .text-success {
+          color: #1C402E !important;
+        }
+        .card-titles {
+          color: #E8C26F !important;
+        }
+        .bg-success {
+          background-color: #1C402E !important;
+          color: white !important;
+        }
+        .judulfoot {
+          color: #E8C26F !important;
+        }
+        .btn {
+          background-color: #506440 !important;
+          color: white !important;
+        }
+        .btn:hover {
+          background-color: #506440 !important;
+          color: white !important;
+        }
+        .btn-ku {
+           background-color: #E8C26F !important
+         }
+         .btn-ku:hover {
+           background-color: #E8C26F !important
+         }
+        html {
+            scroll-behavior: smooth;
+        }
+        #back-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            display: none;
+            z-index: 99;
+        }
+        .produk-img {
+            overflow: hidden;
+        }
+        .produk-img img {
+            transition: transform 0.5s ease;
+        }
+        .produk-img:hover img {
+            transform: scale(1.1);
+        }
+        .produk-card {
+            overflow: hidden;
+        }
+        .produk-card .card {
+            transition: transform 0.5s ease;
+        }
+        .produk-card:hover .card {
+            transform: scale(1.1);
+        }
+        @media(max-width: 600px){
+          .jumbotron h1 {
+            font-size: 2.5rem;
+          }
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+    </style>
+</head>
+<body>
+   
+   
+   <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">QurbanBersama.id</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tentang.html">Tentang Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hewanqurban.html">Hewan Kurban</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pemesanan.html">Cara Pesan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontak.html">Kontak</a>
+                        </li>
+                    </ul>
+                    <a href="login.html" class="btn btn-ku ml-2">Login</a>
+                    <a href="daftra.html" class="btn ml-2">Daftar</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner Utama -->
+    <section class="jumbotron text-center text-white d-flex justify-content-center align-items-center mt-5 py-5">
+        <div class="container">
+            <h1 class="jumbotron-heading" style="letter-spacing: 1.2px" data-aos="fade-up">Menyediakan Hewan Kurban Berkualitas untuk Ibadah Anda</h1>
+            <p class="lead text-white" data-aos="fade-up">QurbanBersama.id</p>
+        </div>
+    </section>
+
+     <section id="services" class="py-3">
+       <h2 class="display-6 fw-bold text-center" data-aos="fade-up">Pelayanan Kami</h2>
+  <div class="container pt-3 mt-5">
+    <div class="row">
+      <div class="col-md-4 produk-card" data-aos="fade-up">
+        <div class="card mb-4 border-0">
+          <div class="card-body text-center">
+            <i class="fas fa-tractor fa-3x text-success mb-3"></i>
+            <h5 class="card-titles">Kualitas Terbaik</h5>
+            <p class="card-text" style="letter-spacing: 1.2px">Kami menyediakan hewan qurban dengan kualitas terbaik dari peternakan terpercaya.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 produk-card" data-aos="fade-up">
+        <div class="card mb-4 border-0">
+          <div class="card-body text-center">
+            <i class="fas fa-horse fa-3x  text-success mb-3"></i>
+            <h5 class="card-titles">Pelayanan Cepat</h5>
+            <p class="card-text" style="letter-spacing: 1.2px">Kami memberikan pelayanan yang cepat dan responsif untuk kebutuhan qurban Anda.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 produk-card" data-aos="fade-up">
+        <div class="card mb-4 border-0">
+          <div class="card-body text-center">
+            <i class="fas fa-comments fa-3x text-success mb-3"></i>
+            <h5 class="card-titles">Konsultasi Gratis</h5>
+            <p class="card-text" style="letter-spacing: 1.2px">Konsultasikan kebutuhan qurban Anda dengan tim ahli kami secara gratis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+    <div class="container px-4 mt-3">
+     <h2 class="display-6 fw-bold text-center" data-aos="fade-up">Kami Menyediakan</h2>
+    <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+      <div class="col d-flex flex-column produk-img" data-aos="fade-up">
+        <img src="./image/peternakan.jpeg" alt="" class="img-fluid">
+        <h2 class="text-left fw-bold mt-5 text-success">Sekilas Tentang QurbanBersama.id</h2>
+        <p class="text-left" style="letter-spacing: 1.2px">QurbanBersama.id menyediakan hewan kurban berkualitas dengan layanan terbaik. Kami menjamin kesehatan dan kesejahteraan hewan kurban serta memberikan kemudahan dalam proses pemesanan.</p>
+      </div>
+
+      <div class="col mt-5">
+        <div class="row row-cols-1 row-cols-sm-2 g-4">
+          <div class="col-md-6 mb-4" data-aos="fade-up">
+      <div class="card border-0 produk-img">
+        <img src="./image/sapi.jpeg" class="card-img-top" alt="Produk 4">
+        <div class="card-body">
+          <div class="tombol text-center">
+          <a href="#" class="btn">Lihat lainnya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+     <div class="col-md-6 mb-4" data-aos="fade-up">
+      <div class="card border-0 produk-img">
+        <img src="./image/kambing.jpeg" class="card-img-top" alt="Produk 4">
+        <div class="card-body">
+          <div class="tombol text-center">
+          <a href="#" class="btn">Lihat lainnya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+          
+        </div>
+        
+        <div class="row row-cols-1 row-cols-sm-2 g-4">
+          <div class="col-md-6 mb-4" data-aos="fade-up">
+      <div class="card border-0 produk-img">
+        <img src="./image/domba.jpeg" class="card-img-top" alt="Produk 4">
+        <div class="card-body">
+          <div class="tombol text-center">
+          <a href="#" class="btn">Lihat lainnya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<div class="container-fluid bg-success mt-3 py-5">
+    <div class="container">
+    <div class="about-section mt-5">
+      <div class="row">
+        <div class="col-md-6 pt-3" data-aos="fade-up">
+          <p class="lead" style="letter-spacing: 1.2px" >"Selamat kepada Qurbanbersama.id yang telah terbukti sebagai tempat yang dipercayai dan diandalkan dalam menjalankan misi kebaikan. Kepercayaan yang diberikan oleh masyarakat adalah bukti dari dedikasi dan integritas yang telah ditunjukkan. Teruslah menjadi teladan dalam memberikan manfaat dan inspirasi kepada banyak orang. Selamat atas keberhasilan yang luar biasa!"</p>
+          
+          <figcaption class="blockquote-footer text-white" style="letter-spacing: 1.2px">KH.AGUS SUMANTO</figcaption>
+        </div>
+        <div class="col-md-6 produk-img" data-aos="fade-up">
+          <img src="./image/penghargaan.jpeg" class="img-fluid pt-3" width="800" alt="Tent Rental">
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+
+
+
+<div class="container-fluid py-5 my-5 bg-sidebar rounded-5" id="Testimonial">
+  <h2 class="display-6 fw-bold text-center" data-aos="fade-up">Galeri Kami</h2>
+  <div class="container mt-5 pt-5">
+   
+    <div class="row" data-masonry='{"percentPosition": true }'>
+      <div class="col-lg-3 mb-3 testimony-content produk-img" data-aos="fade-up">
+        <img src="./image/6.jpeg" alt="" class="img-fluid w-100">
+      </div>
+      <div class="col-lg-3 mb-3 testimony-content produk-img" data-aos="fade-up">
+        <img src="./image/1.jpeg" alt="" class="img-fluid w-100">
+      </div>
+      <div class="col-lg-3 mb-3 testimony-content produk-img" data-aos="fade-up">
+        <img src="./image/2.jpeg" alt="" class="img-fluid w-100">
+      </div>
+      <div class="col-lg-3 mb-3 testimony-content produk-img" data-aos="fade-up">
+        <img src="./image/3.jpeg" alt="" class="img-fluid w-100">
+      </div>
+      
+      <div class="col-lg-3 mb-3 testimony-content produk-img" data-aos="fade-up">
+        <img src="./image/4.jpeg" alt="" class="img-fluid w-100">
+      </div>
+      <div class="col-lg-3 mb-3 testimony-content produk-img" data-aos="fade-up">
+        <img src="./image/5.jpeg" alt="" class="img-fluid w-100" >
+      </div>
+      <div class="col-lg-3 mb-3 testimony-content produk-img" data-aos="fade-up">
+        <img src="./image/7.jpeg" alt="" class="img-fluid w-100">
+      </div>
+      <div class="col-lg-3 mb-3 testimony-content produk-img" data-aos="fade-up">
+        <img src="./image/8.jpeg" alt="" class="img-fluid w-100">
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 pt-3">
+                    <h5 class="judulfoot">Link Cepat</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Tentang Kami</a></li>
+                        <li><a href="#" class="text-white">Kontak</a></li>
+                        <li><a href="#" class="text-white">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-left pt-3">
+                    <h5 class="judulfoot">Ikuti Kami</h5>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="col-md-4 text-left pt-3">
+                    <h5 class="judulfoot">Informasi Kontak</h5>
+                    <p>Email: dajah9314@gmail.com</p>
+                    <p>Tel: +62 812-2517-2900</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+<button id="back-to-top" class="btn btn-ku" title="Go to top" data-aos="fade-left"><i class="fas fa-arrow-up"></i></button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script>
+    AOS.init();
+
+    // Show or hide the button
+    window.onscroll = function() {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        var backToTopButton = document.getElementById("back-to-top");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    document.getElementById('back-to-top').addEventListener('click', function() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    });
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

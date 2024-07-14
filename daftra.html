@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Qurbanbersama.id</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- data-aos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <style>
+        body {
+            background: url('./image/bglr.png') center center;
+            height: 500px;
+            background-size: cover;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+.btn-ku {
+           background-color: #E8C26F !important
+         }
+         .btn-ku:hover {
+           background-color: #E8C26F !important
+         }
+
+    </style>
+</head>
+<body>
+  <div class="container d-flex align-items-center justify-content-center min-vh-100">
+    <div class="card shadow-lg text-white p-3 mb-5 bg-transparent rounded border" style="width: 22rem;" data-aos="fade-up">
+      <div class="card-body">
+        <h5 class="card-title text-center mb-4">Register at Qurbanbersama.id</h5>
+        <form id="registerForm">
+          <div class="mb-3">
+            <label for="registerEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="registerEmail" placeholder="Enter your email" required>
+          </div>
+          <div class="mb-3">
+            <label for="registerPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="registerPassword" placeholder="Enter your password" required>
+          </div>
+          <div class="d-grid gap-2">
+            <a href="index.html" class="btn btn-ku text-white">Register</a>
+          </div>
+        </form>
+        <div class="text-center mt-3">
+          <a href="index.html">Already have an account? Login</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('registerForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const email = document.getElementById('registerEmail').value;
+      const password = document.getElementById('registerPassword').value;
+      
+      // Simpan data registrasi ke local storage (hanya untuk contoh)
+      localStorage.setItem('registeredEmail', email);
+      localStorage.setItem('registeredPassword', password);
+      
+      alert("Registration successful. You can now login!");
+      window.location.href = 'index.html';
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+      AOS.init();
+      </script>
+</body>
+</html>
